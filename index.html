@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>pilihan hidup</title>
+  </head>
+  <body>
+    <h1 class="text-center" style="margin-top: 100px;">Tempat mana yang akan anda pilih <br> saat di akhirat nanti..?</h1>
+
+    <div class="row text-center" style="width: 20rem;margin:50px auto;left:0;right:0;font-size: 60px;font-weight: bold;">
+    	<div class="col-sm-6">
+    		<button class="btn btn-success btn-lg surga">SURGA</button>
+    	</div>
+    	<div class="col-sm-6">
+    		<button class="btn btn-danger btn-lg neraka">NERAKA</button>
+    	</div>
+    </div>
+    <div class="row text-center" style="width: 20rem;margin:50px auto;left:0;right:0;">
+    	<div class="col-sm-6">
+    		<button class="btn btn-success btn-lg surga1">SURGA</button>
+    	</div>
+    	<div class="col-sm-6">
+    		<button class="btn btn-success btn-lg surga2">SURGA</button>
+    	</div>
+    </div>
+ 	
+ 	<div class="row text-center justify-content-center" style="">
+   		<h5 class="text-center" style="margin-top: 150px;position:absolute;bottom: 0;padding-bottom: 150px">Silahkan klik button untuk menjawab pertanyaan</h5>
+ 	</div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript">
+
+    	$('.surga1').hide();
+    	$('.surga').on('mouseover',function(){
+    		$('.surga').hide();
+    		$('.surga1').show();
+    	});
+
+    	$('.surga2').hide();
+    	$('.surga1').on('mouseover',function(){
+    		$('.surga').hide();
+    		$('.surga1').hide();
+    		$('.surga2').show();
+    	});
+
+    	$('.surga2').on('mouseover',function(){
+    		$('.surga').show();
+    		$('.surga1').hide();
+    		$('.surga2').hide();
+    	});
+
+    	$('.neraka').on('click',function(){
+    		document.location='index2.html';
+    	});
+
+    </script>
+  </body>
+</html>
